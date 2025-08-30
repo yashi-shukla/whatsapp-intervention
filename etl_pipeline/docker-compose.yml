@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  etl-pipeline:
+    build: .
+    container_name: whatsapp-etl-pipeline
+    volumes:
+      - ./output:/app/output
+      - ./.env:/app/.env:ro
+    environment:
+      - PYTHONPATH=/app
+      - PYTHONUNBUFFERED=1
+    command: python run_etl.py

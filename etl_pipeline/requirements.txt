@@ -1,0 +1,15 @@
+# Core dependencies
+pandas>=1.5.0
+numpy>=1.21.0
+pydantic>=2.0.0
+python-dotenv>=1.0.0
+
+# BigQuery integration
+google-cloud-bigquery>=3.0.0
+google-auth>=2.0.0
+pandas-gbq>=0.29.0
+
+# Development and testing
+pytest>=7.0.0
+black>=22.0.0
+flake8>=4.0.0
